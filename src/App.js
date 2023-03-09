@@ -16,7 +16,7 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if(preferencesData.verdura.length >= 3 && preferencesData.verdura[0] !== ' ' && preferencesData.fruta.length >= 6){
+    if(preferencesData.verdura.length >= 3 && preferencesData.verdura.charAt(0) !== ' ' && preferencesData.fruta.length >= 6){
       setValidForm(true)     
     } else{
       setValidForm(false)
